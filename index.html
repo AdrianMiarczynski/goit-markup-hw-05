@@ -47,7 +47,7 @@
         <section class="header section">
           <div class="top">
             <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <button type="submit" class="button"><span class="service">Zamów usługe</span></button>
+            <button type="submit" class="button" data-modal-open><span class="service">Zamów usługe</span></button>
           </div>
         </section>
         <!--Nasze atrybuty-->
@@ -345,5 +345,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
