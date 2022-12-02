@@ -249,10 +249,13 @@ body {
 .work {
   width: 1170px;
   box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .work-title {
   width: 352px;
-  padding-left: 409px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -260,10 +263,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-almost-black);
+  display: flex;
 }
 .work ul {
   list-style: none;
   padding: 0;
+  display: flex;
 }
 .work ul li {
   margin-top: 50px;
@@ -271,11 +276,46 @@ body {
 .computer {
   float: left;
 }
+/*start label*/
+.label {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  background-color:rgba(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  top: 1445px;
+}
+.label-phone
+{
+  left: 600px;
+}
+.label-graphic 
+{
+  left: 1000px;
+}
+.label-computer p,
+.label-phone p, 
+.label-graphic p  
+{
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-background);
+  letter-spacing: 0.03em;
+  width: 190px;
+}
 .phone,
 .tablet {
   float: left;
   margin-left: 30px;
 }
+/*finish label*/
 /*finish work*/
 .our-team {
   width: 1600px;
