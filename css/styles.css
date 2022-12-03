@@ -596,6 +596,7 @@ body {
   height: 294px;
   background-color: #2196f3;
   opacity: 0;
+  overflow: hidden;
 }
 .box-img .box-label > p {
   position: absolute;
