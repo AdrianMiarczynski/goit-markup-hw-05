@@ -652,6 +652,8 @@ body {
   left: 0px;
   top: 0px;
   background-color: rgba(0, 0, 0, 0.2);
+  animation: loyal 300ms linear ;
+  transition: 2s;
 }
 .modal {
   position: absolute;
@@ -680,7 +682,42 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  animation: loyaly 300ms linear ;
+  transition: 2s;
 }
-.is-hidden:hover {
-  content: '';
+@keyframes loyal {
+  0%
+  {
+    opacity: 0;
+    background-color: var(--color-blue);
+    transform: rotate(0deg);
+  }
+  50%
+  {
+    background-color:rgba(0, 0, 0, 0.1) ;
+  }
+  100%
+  {
+    opacity: 1;
+    background-color:rgba(0, 0, 0, 0.1);
+    transform: rotate(360deg);
+  }
+}
+@keyframes loyaly {
+  100%
+  {
+    opacity: 0;
+    background-color: var(--color-blue);
+    transform: rotate(0deg);
+  }
+   50%
+  {
+    background-color:rgba(0, 0, 0, 0.1) ;
+  }
+  0%
+  {
+    opacity: 1;
+    background-color:rgba(0, 0, 0, 0.1);
+    transform: rotate(360deg);
+  }
 }
