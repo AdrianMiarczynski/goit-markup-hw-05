@@ -574,6 +574,7 @@ body {
 .main-box li {
   list-style: none;
   border: 1px solid var(--color-third-header-button);
+  cursor: pointer;
 }
 .main-box li:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -585,7 +586,6 @@ body {
   max-height: 404px;
   position: relative;
   overflow: hidden;
-  cursor: pointer;
 }
 .box-img:hover .box-label {
   opacity: 1;
@@ -640,8 +640,8 @@ body {
 /*backdrop*/
 .backdrop {
   position: absolute;
-  width: 1600px;
-  min-height: 1024px;
+  width: 100%;
+  height: 100%;
   left: 0px;
   top: 0px;
   background-color: rgba(0, 0, 0, 0.2);
@@ -649,9 +649,10 @@ body {
 .modal {
   position: absolute;
   width: 528px;
-  height: 581px;
-  top: 221px;
-  left: 536px;
+  min-height: 581px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
   border-radius: 4px;
   background-color: var(--color-background);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
