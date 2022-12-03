@@ -652,7 +652,7 @@ body {
   left: 0px;
   top: 0px;
   background-color: rgba(0, 0, 0, 0.2);
-  animation: loyal 300ms linear ;
+  animation: BackDrop 300ms linear ;
   transition: 2s;
 }
 .modal {
@@ -682,10 +682,10 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  animation: loyaly 300ms linear ;
+  animation: HiddenBackDrop 300ms linear ;
   transition: 2s;
 }
-@keyframes loyal {
+@keyframes BackDrop {
   0%
   {
     opacity: 0;
@@ -703,7 +703,7 @@ body {
     transform: rotate(360deg);
   }
 }
-@keyframes loyaly {
+@keyframes HiddenBackDrop {
   100%
   {
     opacity: 0;
