@@ -648,12 +648,12 @@ body {
 .backdrop {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   left: 0px;
   top: 0px;
   background-color: rgba(0, 0, 0, 0.2);
   animation: BackDrop 300ms linear ;
-  transition: 2s;
+  transition: 1s;
 }
 .modal {
   position: absolute;
@@ -683,41 +683,39 @@ body {
   visibility: hidden;
   pointer-events: none;
   animation: HiddenBackDrop 300ms linear ;
-  transition: 2s;
+  transition: 1s;
 }
 @keyframes BackDrop {
   0%
   {
     opacity: 0;
-    background-color: var(--color-blue);
-    transform: rotate(0deg);
+    transform: scale(0,25);
   }
   50%
   {
-    background-color:rgba(0, 0, 0, 0.1) ;
+    transform: scale(0,75);
   }
   100%
   {
     opacity: 1;
     background-color:rgba(0, 0, 0, 0.1);
-    transform: rotate(360deg);
+    transform: scale(1);
   }
 }
 @keyframes HiddenBackDrop {
-  100%
+  0%
   {
     opacity: 0;
-    background-color: var(--color-blue);
-    transform: rotate(0deg);
+    transform: scale(1);
   }
-   50%
+  50%
   {
-    background-color:rgba(0, 0, 0, 0.1) ;
+    transform: scale(0,75);
   }
-  0%
+  100%
   {
     opacity: 1;
     background-color:rgba(0, 0, 0, 0.1);
-    transform: rotate(360deg);
+    transform: scale(0);
   }
 }
